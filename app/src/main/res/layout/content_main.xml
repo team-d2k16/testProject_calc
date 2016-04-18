@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jahids.simple_calc.MainActivity"
+    tools:showIn="@layout/activity_main">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CALCULATOR"
+                    android:textAlignment="center"
+                    android:textColor="#0b0a0a" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/result"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="33dp"
+                    android:background="#6c5c5c" />
+            </android.support.v7.widget.CardView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/button_1"
+                    android:onClick="btn_1" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/button_2"
+                    android:onClick="btn_2" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/button_3"
+                    android:onClick="btn_3" />
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/button_4"
+                    android:onClick="btn_4" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/button_5"
+                    android:onClick="btn_5" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:id="@+id/button_6"
+                    android:onClick="btn_6" />
+            </android.support.v7.widget.CardView>
+        </TableRow>
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:id="@+id/button_7"
+                    android:onClick="btn_7" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:id="@+id/button_8"
+                    android:onClick="btn_8" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:id="@+id/button_9"
+                    android:onClick="btn_9" />
+            </android.support.v7.widget.CardView>
+        </TableRow>
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/button_0"
+                    android:onClick="btn_0" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:id="@+id/button_point"
+                    android:onClick="btn_dot" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:id="@+id/button_clear"
+                    android:onClick="btn_C" />
+            </android.support.v7.widget.CardView>
+
+        </TableRow>
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/button_add"
+                    android:onClick="btn_add" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:id="@+id/button_sub"
+                    android:onClick="btn_sub" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardUseCompatPadding="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:background="#f8f6fb">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:id="@+id/button_equa"
+                    android:onClick="btn_equ" />
+            </android.support.v7.widget.CardView>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
